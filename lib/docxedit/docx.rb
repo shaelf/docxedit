@@ -8,7 +8,7 @@ module DocxEdit
     attr_reader :zip_file, :xml_document, :xml_headers, :xml_footers
     
     def initialize(path, temp_dir=nil)
-      @zip_file = Zip::ZipFile.new(path)
+      @zip_file = Zip::File.new(path)
       @temp_dir = temp_dir
       bind_contents
     end
