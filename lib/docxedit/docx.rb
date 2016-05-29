@@ -1,4 +1,4 @@
-require 'zip/zip'
+require 'zip'
 require "rexml/document"
 require 'tempfile'
 require_relative 'content_block'
